@@ -1,0 +1,30 @@
+*{  
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+#jogo{
+    margin-top: 50px;
+    width:603px;
+    height:600px;
+    border:solid 3px
+}
+ 
+.linha{
+    height:200px;
+    border-bottom:solid 1px;
+}
+ 
+.casa{
+    width:200px;
+    height:100%;
+    border-right:solid 1px;
+    float:left;
+    font-size: 4rem;
+    text-align: center;
+    align-items: center;
+}
+
