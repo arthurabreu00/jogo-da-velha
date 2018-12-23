@@ -7,10 +7,10 @@ class GameController{
 
     initEvents(){
 
-        let buttons = document.querySelectorAll('.casa');
+        this.buttons = document.querySelectorAll('.casa');
 
 
-        buttons.forEach(btn =>{
+        this.buttons.forEach(btn =>{
             
             btn.addEventListener('click',()=>{
 
@@ -20,8 +20,10 @@ class GameController{
           
                     if(this.vez){
                         btn.innerHTML = 'X';
+                        document.querySelector('#vez').innerHTML =  'O';
                     }else{
                         btn.innerHTML = 'O';
+                        document.querySelector('#vez').innerHTML =  'X';
 
                     }
                     this.vez = !this.vez;
@@ -30,12 +32,6 @@ class GameController{
             });
 
         });
-
     }
-
-
-
-
-
 
 }
